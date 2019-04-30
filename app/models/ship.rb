@@ -6,6 +6,7 @@ class Ship
     @name = name
     @type = type
     @booty = booty
+    
     @@SHIPS << self
   end
   
@@ -16,4 +17,5 @@ class Ship
   def self.clear
     @@SHIPS.empty
   end
+  
 end
