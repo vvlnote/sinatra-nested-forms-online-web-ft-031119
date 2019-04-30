@@ -19,6 +19,7 @@ module FormsLab
       height: params[:pirate][:height], weight: params[:pirate][:weight])
       params[:pirate][:ships].each do |ship|
         ship = Ship.new(name: ship[:name], type: ship[:category], booty: ship[:booty])
+        ship.pirate = pirate
       end
       erb :'pirates/show'
     end
