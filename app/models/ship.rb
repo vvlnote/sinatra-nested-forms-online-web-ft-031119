@@ -1,12 +1,13 @@
 class Ship
   
+  attr_accessor :pirate
   @@SHIPS = []
   
   def initialize(name:, type:, booty:)
     @name = name
     @type = type
     @booty = booty
-    
+    @pirate = nil
     @@SHIPS << self
   end
   
@@ -18,4 +19,6 @@ class Ship
     @@SHIPS.empty
   end
   
+  
+    
 end
